@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environment
+.env
+.venv/
+venv/
+
+# System files
+*.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+
+# Optional: Large static files
+/static/images/*.jpg

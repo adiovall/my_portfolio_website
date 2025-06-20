@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Project One",
+        "description": "A web app built with Flask and JavaScript.",
+        "image": "project2.jpg",
+        "link": "URL=https://tinypng.com/backend/opt/download/62gw3q1vwdk3tb7q4rgjjbs2xstxy3fe/balazs-ketyi-sScmok4Iq1o-unsplash.jpg\n",
+        "category": "Web"
+    },
+    {
+        "title": "Project Two",
+        "description": "A responsive website designed with modern CSS.",
+        "image": "project1.jpg",
+        "link": "https://example.com/project1",
+        "category": "Web"
+    },
+    {
+        "title": "Project Three",
+        "description": "A mobile app with React Native.",
+        "image": "project3.jpg",
+        "link": "URL=https://tinypng.com/backend/opt/download/45bdre4zdphq3fws9fsqqqev37ej0yfe/azwedo-l-lc-c2k8vBHyNwM-unsplash.jpg\n",
+        "category": "Mobile"
+    },
+
+    {
+        "title": "Project Four",
+        "description": "A Desktop app with pyQt5.",
+        "image": "project4.png",
+        "link": "URL=https://tinypng.com/backend/opt/download/jakc7qq22zzbaga1crhgkts8ktsty123/adrien-olichon-_GH9LwhlSO4-unsplash.jpg"
+,
+        "category": "Desktop"
+    }
+
+]

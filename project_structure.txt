@@ -1,0 +1,12 @@
+portfolio_website/
+├── app.py                  # Main application file
+├── static/
+│   ├── css/                # CSS files
+│   ├── images/             # Your portfolio images
+│   └── js/                 # JavaScript files
+└── templates/
+    ├── base.html           # Base template
+    ├── index.html          # Home page
+    ├── about.html          # About page
+    ├── projects.html       # Projects showcase
+    └── contact.html        # Contact page
