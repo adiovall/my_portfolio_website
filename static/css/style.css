@@ -199,11 +199,11 @@ footer {
 }
 
 /* static/css/custom.css */
+/* static/css/style.css */
 .animated-border {
     position: relative;
     z-index: 0;
 }
-
 .animated-border::before {
     content: '';
     position: absolute;
@@ -217,12 +217,10 @@ footer {
     animation: spin 2s linear infinite;
     z-index: -1;
 }
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
 .dark .animated-border::before {
     border-top-color: #99f6e4; /* teal-300 */
 }

@@ -31,7 +31,7 @@ document.getElementById('contact-form')?.addEventListener('submit', function(e) 
     })
     .catch(error => {
         messageElement.className = 'text-center text-red-400';
-        messageElement.textContent = 'Network error: Unable to connect to server. Please try again later.';
+        messageElement.textContent = 'Network error: Unable to connect to server.';
         console.error('Form submission error:', error);
     });
 });
@@ -63,12 +63,22 @@ filterButtons.forEach(button => {
 
 // Theme toggle
 const toggleButton = document.getElementById('theme-toggle');
-toggleButton?.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-});
+if (toggleButton) {
+    console.log('Theme toggle button found');
+    toggleButton.addEventListener('click', () => {
+        console.log('Theme toggle clicked');
+        const htmlElement = document.documentElement;
+        const isDark = htmlElement.classList.toggle('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        console.log('Theme set to:', isDark ? 'dark' : 'light');
+    });
+} else {
+    console.error('Theme toggle button not found');
+}
 
 // Load saved theme
-if (localStorage.getItem('theme') === 'dark') {
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    console.log('Applying saved dark theme');
     document.documentElement.classList.add('dark');
 }
